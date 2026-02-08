@@ -1,1 +1,54 @@
 @import "tailwindcss";
+@import "./App.css";
+
+@font-face {
+  font-family: "Aeonik Pro Regular";
+  src: url("/fonts/Aeonik-Pro-regular.ttf");
+}
+
+@font-face {
+  font-family: "Aeonik Pro Bold";
+  font-weight: bold;
+  src: url("/fonts/aeonik-bold.woff2");
+}
+
+@font-face {
+  font-family: "FeatureDeck Regular";
+  src: url("/fonts/featureDeck-regular.woff2");
+}
+
+@font-face {
+  font-family: "socialMono";
+  src: url("/fonts/socialMono.woff2");
+}
+
+@theme {
+  --font-sans: "Aeonik Pro Regular", sans-serif;
+  --font-heading: "FeatureDeck Regular";
+  --font-social: "socialMono";
+  --color-black: #111111;
+  --color-primary: #F66F00;
+  --color-offWhite: #FFF7E9;
+}
+
+body{
+  width: 100dvw;
+  overflow-x: hidden;
+  background-color: #FFF7E9;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .ease-expo-out{
+    --tw-ease: cubic-bezier(.16,1.08,.38,.98);
+    transition-timing-function: cubic-bezier(.16,1.08,.38,.98);
+  }
+}

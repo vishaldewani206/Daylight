@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components{
+  .btn-initials{
+    @apply px-4 h-12 rounded ;
+  }
+
+  .grid-wrapper{
+    @apply w-full h-full grid md:grid-rows-[1fr_1.5fr_1fr] grid-rows-[1fr_1fr_2fr]  z-10 ;
+    .box {
+      @apply border border-gray-300/40 md:px-8 px-3;
+    }
+  
+    .box-wrapper {
+      @apply grid md:grid-cols-[64%_20%_16%] grid-cols-3 ;
+    }
+  }
+
+}
