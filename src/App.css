@@ -2,11 +2,11 @@
 
 @layer components{
   .btn-initials{
-    @apply px-4 h-12 rounded ;
+    @apply px-4 h-12 rounded cursor-pointer hover:scale-105 transition-transform;
   }
 
   .grid-wrapper{
-    @apply w-full h-full grid md:grid-rows-[1fr_1.5fr_1fr] grid-rows-[1fr_1fr_2fr]  z-10 ;
+    @apply w-full h-full grid md:grid-rows-[1fr_1.5fr_1fr] grid-rows-[1fr_4fr_0.5fr]  z-10 md:mt-0 mt-40;
     .box {
       @apply border border-gray-300/40 md:px-8 px-3;
     }
